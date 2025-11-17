@@ -30,10 +30,10 @@ Defined basic data models for database (e.g., Establishments, Categories, Users,
 Created and committed api.yaml to document planned API endpoints.
 
 Checklists:
-Finalize project title and description.
-Define data models (ERD or simple table list).
-Create GitHub repository and initial commits.
-Upload initial API endpoint draft (api.yaml).
+✅Finalize project title and description.
+✅Define data models (ERD or simple table list).
+✅Create GitHub repository and initial commits.
+✅Upload initial API endpoint draft (api.yaml).
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 🌐 Milestone 2 (Nov Week 2): Backend Development & Database Setup
@@ -48,7 +48,7 @@ API documentation updated in api.yaml.
 
 Checklists:
 
-Create app.py or server.js.
+✅Create app.py or server.js.
 Connect database and test CRUD operations.
 Document API routes in api.yaml.
 Push backend updates to GitHub.
