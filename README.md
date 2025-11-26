@@ -54,10 +54,10 @@ Outputs:
 
 Checklist:
 
-- ✔️ app.py/server.js created
-- ✔️ Connected to database
-- ✔️ CRUD tested
-- ✔️ Backend pushed to GitHub
+-  app.py/server.js created
+-  Connected to database
+-  CRUD tested
+-  Backend pushed to GitHub
 
 ---
 
@@ -74,10 +74,10 @@ Outputs:
 
 Checklist:
 
-- ✔️ Created homepage
-- ✔️ Fetch data from API
-- ✔️ Added category filter
-- ✔️ Pushed frontend files
+-  Created homepage
+-  Fetch data from API
+-  Added category filter
+-  Pushed frontend files
 
 ---
 
@@ -94,10 +94,10 @@ Outputs:
 
 Checklist:
 
-- ✔️ Admin panel done
-- ✔️ CRUD checked
-- ✔️ GPS/offline mode verified
-- ✔️ Uploaded tested version
+-  Admin panel done
+-  CRUD checked
+-  GPS/offline mode verified
+-  Uploaded tested version
 
 ---
 
@@ -114,10 +114,10 @@ Updated README
 
 Checklist:
 
-- ✔️ User guide added
-- ✔️ Demo video recorded
-- ✔️ Final commits
-- ✔️ Submitted repo
+-  User guide added
+-  Demo video recorded
+-  Final commits
+-  Submitted repo
 
 ---
 
