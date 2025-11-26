@@ -11,10 +11,10 @@ Goal: Help users explore local destinations, restaurants, hotels, and landmarks 
 
 👥 Team Members
 
-Baygan, Kristine Jean
-Dayaday, Julinne Amber
-Layo, Glavine
-Tamano, Bae Fatma Razzia
+[ ] Baygan, Kristine Jean
+[ ] Dayaday, Julinne Amber
+[ ] Layo, Glavine
+[ ] Tamano, Bae Fatma Razzia
 
 ---
 
@@ -33,10 +33,10 @@ Outputs:
 
 Checklist:
 
-✔️ Finalized topic
-✔️ Made data models
-✔️ Created repository
-✔️ Uploaded first API draft
+[x]✔️ Finalized topic
+[x]✔️ Made data models
+[x]✔️ Created repository
+[x]✔️ Uploaded first API draft
 
 ---
 
@@ -54,10 +54,10 @@ Outputs:
 
 Checklist:
 
-✔️ app.py/server.js created
-✔️ Connected to database
-✔️ CRUD tested
-✔️ Backend pushed to GitHub
+[ ]✔️ app.py/server.js created
+[ ]✔️ Connected to database
+[ ]✔️ CRUD tested
+[ ]✔️ Backend pushed to GitHub
 
 ---
 
@@ -74,10 +74,10 @@ Outputs:
 
 Checklist:
 
-✔️ Created homepage
-✔️ Fetch data from API
-✔️ Added category filter
-✔️ Pushed frontend files
+[ ]✔️ Created homepage
+[ ]✔️ Fetch data from API
+[ ]✔️ Added category filter
+[ ]✔️ Pushed frontend files
 
 ---
 
@@ -94,10 +94,10 @@ Outputs:
 
 Checklist:
 
-✔️ Admin panel done
-✔️ CRUD checked
-✔️ GPS/offline mode verified
-✔️ Uploaded tested version
+[ ]✔️ Admin panel done
+[ ]✔️ CRUD checked
+[ ]✔️ GPS/offline mode verified
+[ ]✔️ Uploaded tested version
 
 ---
 
@@ -114,10 +114,10 @@ Updated README
 
 Checklist:
 
-✔️ User guide added
-✔️ Demo video recorded
-✔️ Final commits
-✔️ Submitted repo
+[ ]✔️ User guide added
+[ ]✔️ Demo video recorded
+[ ]✔️ Final commits
+[ ]✔️ Submitted repo
 
 ---
 
