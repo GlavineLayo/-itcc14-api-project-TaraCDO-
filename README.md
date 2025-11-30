@@ -54,10 +54,10 @@ Outputs:
 
 Checklist:
 
--  app.py/server.js created
--  Connected to database
--  CRUD tested
--  Backend pushed to GitHub
+-  ✔️ app.py/server.js created
+-  ✔️ Connected to database
+-  ✔️ CRUD tested
+-  ✔️ Backend pushed to GitHub
 
 ---
 
@@ -68,7 +68,7 @@ We developed the user interface and connected it to the backend so the data load
 
 Outputs:
 
-- omepage layout
+- Homepage layout
 - Display of establishments and categories
 - Search and filter features
 
