@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaraCDO - Explore Cagayan de Oro</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Search places (e.g., mall, restaurant, landmark)...">
+            <button id="locate-me">📍 Locate Me</button>
+            <div id="user-info">
+                <span id="user-name"></span>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <div id="sidebar">
+            <h3>Categories</h3>
+            <select id="filter">
+                <option value="">All Categories</option>
+                <option value="Mall">Malls</option>
+                <option value="Restaurant">Restaurants</option>
+                <option value="Landmark">Landmarks</option>
+                <option value="Dorm/Hotel">Dorms/Hotels</option>
+            </select>
+            <h3>Places</h3>
+            <ul id="listings"></ul>
+        </div>
+        <div id="map"></div>
+    </div>
+    
+    <!-- Location Modal -->
+    <div id="location-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📍 Your Location</h2>
+            <p id="location-text">Getting your location...</p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
