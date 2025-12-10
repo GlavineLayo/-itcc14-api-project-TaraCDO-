@@ -1,151 +1,225 @@
-openapi: 3.0.0
-info:
-  title: TaraCDO API
-  version: 1.0.0
-  description: >
-    TaraCDO is a Tourist Resource Locator API for Cagayan de Oro City.
-    It helps users explore nearby establishments, restaurants, hotels,
-    and landmarks without relying on external APIs.
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "TaraCDO — Explore. Discover. Experience",
+    "description": "Tourist Resource Locator API for establishments in Cagayan de Oro City.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "TaraCDO",
+      "url": "https://github.com/GlavineLayo/-itcc14-api-project-TaraCDO-"
+    }
+  },
+  "servers": [
+    { "url": "http://devapi.com" },
+    { "url": "https://prodapi.com" }
+  ],
 
-servers:
-  - url: http://localhost:5000/api
-    description: Local development server
+  "paths": {
+    "/establishments": {
+      "get": {
+        "summary": "Get all establishments",
+        "description": "Returns all establishments stored in the database.",
+        "responses": {
+          "200": {
+            "description": "List of establishments",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Establishment" }
+                }
+              }
+            }
+          },
+          "500": { "description": "Server error" }
+        }
+      },
 
-paths:
-  /establishments:
-    get:
-      summary: Get all establishments
-      description: Returns a list of all establishments with basic info.
-      responses:
-        "200":
-          description: Successful response
-    post:
-      summary: Add new establishment
-      description: Admins can add a new place with category, price range, and coordinates.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Establishment'
-      responses:
-        "201":
-          description: Establishment added successfully
+      "post": {
+        "summary": "Add a new establishment",
+        "description": "Creates a new establishment entry in the database.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/EstablishmentInput" }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Establishment successfully added",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Establishment" }
+              }
+            }
+          },
+          "400": { "description": "Invalid input" },
+          "500": { "description": "Server error" }
+        }
+      }
+    },
 
-  /establishments/{id}:
-    get:
-      summary: Get establishment by ID
-      parameters:
-        - in: path
-          name: id
-          required: true
-          schema:
-            type: integer
-      responses:
-        "200":
-          description: Found establishment
-        "404":
-          description: Establishment not found
-    put:
-      summary: Update establishment details
-      parameters:
-        - in: path
-          name: id
-          required: true
-          schema:
-            type: integer
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Establishment'
-      responses:
-        "200":
-          description: Establishment updated
-    delete:
-      summary: Delete establishment
-      parameters:
-        - in: path
-          name: id
-          required: true
-          schema:
-            type: integer
-      responses:
-        "204":
-          description: Establishment deleted successfully
+    "/establishments/{id}": {
+      "get": {
+        "summary": "Get a specific establishment",
+        "description": "Retrieves one establishment by its MongoDB ObjectId.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Establishment record",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Establishment" }
+              }
+            }
+          },
+          "404": { "description": "Not found" }
+        }
+      },
 
-  /categories:
-    get:
-      summary: Get all categories
-      description: Returns a list of all establishment categories (e.g., Hotels, Restaurants).
-      responses:
-        "200":
-          description: Successful response
+      "put": {
+        "summary": "Update an establishment",
+        "description": "Updates an existing establishment record.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/EstablishmentInput" }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully updated",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Establishment" }
+              }
+            }
+          },
+          "404": { "description": "Not found" },
+          "400": { "description": "Invalid input" }
+        }
+      },
 
-  /ratings:
-    get:
-      summary: Get all ratings
-      responses:
-        "200":
-          description: Successful response
-    post:
-      summary: Add new rating
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Rating'
-      responses:
-        "201":
-          description: Rating added successfully
+      "delete": {
+        "summary": "Delete an establishment",
+        "description": "Deletes a given establishment by ID.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Successfully deleted" },
+          "404": { "description": "Not found" }
+        }
+      }
+    },
 
-components:
-  schemas:
-    Establishment:
-      type: object
-      properties:
-        id:
-          type: integer
-        name:
-          type: string
-          example: "Seven Seas Waterpark"
-        category:
-          type: string
-          example: "Tourist Attraction"
-        price_range:
-          type: string
-          example: "₱₱"
-        latitude:
-          type: number
-          format: float
-          example: 8.4772
-        longitude:
-          type: number
-          format: float
-          example: 124.6477
-        rating:
-          type: number
-          format: float
-          example: 4.5
-        description:
-          type: string
-          example: "A waterpark featuring thrilling slides and wave pools."
+    "/establishments/type/{type}": {
+      "get": {
+        "summary": "Filter establishments by type",
+        "description": "Returns all establishments that match a given category/type.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["landmark", "restaurant", "mall", "market", "dormitory"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of establishments by type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Establishment" }
+                }
+              }
+            }
+          },
+          "404": { "description": "No establishments found" }
+        }
+      }
+    }
+  },
 
-    Rating:
-      type: object
-      properties:
-        id:
-          type: integer
-        establishment_id:
-          type: integer
-        user:
-          type: string
-        rating:
-          type: number
-          format: float
-          example: 5
-        comment:
-          type: string
-          example: "Amazing place to visit!"
+  "components": {
+    "schemas": {
+      "Establishment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "692c102f02a4fbeb3d0829f7"
+          },
+          "name": {
+            "type": "string",
+            "example": "Ayala Centrio Mall"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["landmark", "restaurant", "mall", "market", "dormitory"],
+            "example": "mall"
+          },
+          "description": {
+            "type": "string",
+            "example": "A large, modern mall located in downtown CDO."
+          },
+          "latitude": { "type": "number", "example": 8.4825 },
+          "longitude": { "type": "number", "example": 124.6472 },
+          "rating": { "type": "number", "example": 4.5 },
+          "price_range": { "type": "string", "example": "$$" },
+          "address": {
+            "type": "string",
+            "example": "C.M. Recto Avenue, Cagayan de Oro City"
+          }
+        }
+      },
+
+      "EstablishmentInput": {
+        "type": "object",
+        "required": ["name", "type", "latitude", "longitude"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["landmark", "restaurant", "mall", "market", "dormitory"]
+          },
+          "description": { "type": "string" },
+          "latitude": { "type": "number" },
+          "longitude": { "type": "number" },
+          "rating": { "type": "number" },
+          "price_range": { "type": "string" },
+          "address": { "type": "string" }
+        }
+      }
+    }
+  }
+}
