@@ -76,7 +76,7 @@ Checklist:
 
 -  ✔️ Created homepage
 -  ✔️ Fetch data from API
--  ✔️  Added category filter
+-  ✔️ Added category filter
 -  ✔️ Pushed frontend files
 
 ---
@@ -88,16 +88,16 @@ We created the admin panel to manage places and tested the system to make sure C
 
 Outputs:
 
-- ⏳ Admin dashboard
-- ⏳ Full CRUD testing
-- ⏳ UI fixes and improvements
+- Admin dashboard
+- Full CRUD testing
+- UI fixes and improvements
 
 Checklist:
 
--  Admin panel done
--  CRUD checked
--  GPS/offline mode verified
--  Uploaded tested version
+-  ⏳ Admin panel done
+-  ⏳ CRUD checked
+-  ⏳ GPS/offline mode verified
+-  ⏳ Uploaded tested version
 
 ---
 
