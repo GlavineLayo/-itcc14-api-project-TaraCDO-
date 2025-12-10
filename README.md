@@ -74,10 +74,10 @@ Outputs:
 
 Checklist:
 
--  Created homepage
--  Fetch data from API
--  Added category filter
--  Pushed frontend files
+-  ✔️ Created homepage
+-  ✔️ Fetch data from API
+-  ✔️ Added category filter
+-  ✔️ Pushed frontend files
 
 ---
 
