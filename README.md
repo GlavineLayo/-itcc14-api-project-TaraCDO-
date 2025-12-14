@@ -13,7 +13,7 @@ Goal: Help users explore local destinations, restaurants, hotels, and landmarks 
 
 Team Members
 - Baygan, Kristine Jean - GitHub: https://github.com/kristinebaygan
-- Dayaday, Julinne Amber - GitHub: https://github.com/_____
+- Dayaday, Julinne Amber - GitHub: https://github.com/julinamber
 - Layo, Glavine - GitHub: https://github.com/GlavineLayo
 - Tamano, Bae Fatma Razzia - GitHub: https://github.com/BaeFatmaTamano
 
