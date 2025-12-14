@@ -1,6 +1,6 @@
 # -itcc14-api-project-TaraCDO-
 
-🗺️ TaraCDO — Explore. Discover. Experience.
+TaraCDO — Explore. Discover. Experience.
 
 Course: ITCC 14A – API Development
 Project Type: Tourist Resource Locator App
@@ -9,133 +9,120 @@ Goal: Help users explore local destinations, restaurants, hotels, and landmarks 
 
 ---
 
-👥 Team Members
-
-- Baygan, Kristine Jean
-- Dayaday, Julinne Amber
-- Layo, Glavine
-- Tamano, Bae Fatma Razzia
-
----
-
-📌 Project Milestones
-
-🧩 Milestone 1 – Project Setup & API Design (Nov Week 1)
-
-What we did:
-We finalized our project idea, created the GitHub repo, and planned our API.
-
-Outputs:
-
-- Problem, objectives, and solution added in README
-- Simple data models/tables
-- First version of `api.yaml`
-
-Checklist:
-
-- ✔️ Finalized topic
-- ✔️ Made data models
-- ✔️ Created repository
-- ✔️ Uploaded first API draft
+Team Members
+- Baygan, Kristine Jean - GitHub: https://github.com/_____
+- Dayaday, Julinne Amber - GitHub: https://github.com/_____
+- Layo, Glavine - GitHub: https://github.com/_____
+- Tamano, Bae Fatma Razzia - GitHub: 
 
 ---
 
-🌐 Milestone 2 – Backend & Database (Nov Week 2)
-
-What we did:
-We started coding the backend using Flask/Node.js and connected it to a database.
-We also tested basic CRUD functions.
-
-Outputs:
-
-- Working backend
-- Database schema file
-- Updated API docs
-
-Checklist:
-
--  ✔️ app.py/server.js created
--  ✔️ Connected to database
--  ✔️ CRUD tested
--  ✔️ Backend pushed to GitHub
+Project Milestones
 
 ---
 
-📱 Milestone 3 – Frontend & UI (Nov Week 3)
+Milestone 1 (Nov Week 1): Project Proposal & API Design
 
 What we did:
-We developed the user interface and connected it to the backend so the data loads on the page.
+Finalized the TaraCDO project topic, defined the core problem, and outlined the initial data models and API endpoints.
 
-Outputs:
-
-- Homepage layout
-- Display of establishments and categories
-- Search and filter features
+Deliverables:
+- Updated README.md with Problem Statement and Objectives
+- Initial Data Models (Users, Places, Categories)
+- First draft of api.yaml listing planned endpoints
 
 Checklist:
-
--  ✔️ Created homepage
--  ✔️ Fetch data from API
--  ✔️ Added category filter
--  ✔️ Pushed frontend files
+- ✔️ Team meeting to finalize topic
+- ✔️ Problem statement written in README
+- ✔️ Data models defined
+- ✔️ API endpoints listed in api.yaml
+- ✔️ Files committed and pushed to GitHub
 
 ---
 
-🛠️ Milestone 4 – Admin Panel & Testing (Nov Week 4)
+Milestone 2 (Nov Week 2): Half Backend API + Documentation + GitHub
 
 What we did:
-We created the admin panel to manage places and tested the system to make sure CRUD and location features work properly.
+Initialized the repository, set up the development environment, and implemented basic create/list endpoints. OpenAPI documentation was updated with schemas and examples.
 
-Outputs:
-
-- Admin dashboard
-- Full CRUD testing
-- UI fixes and improvements
+Deliverables:
+- Running local backend server
+- Partial CRUD (create/list) for key resources
+- Updated OpenAPI documentation (Swagger-ready)
 
 Checklist:
 
--  ⏳ Admin panel done
--  ⏳ CRUD checked
--  ⏳ GPS/offline mode verified
--  ⏳ Uploaded tested version
+-  ✔️ Repository initialized with initial commit
+-  ✔️ Environment and dependencies installed
+-  ✔️ Create/List endpoints working
+-  ✔️ OpenAPI documentation updated
+-  ✔️ Changes pushed to GitHub
 
 ---
 
-🌟 Milestone 5 – Final Documentation (Dec Week 1)
+Milestone 3 (Nov Week 3): Full Backend API
 
 What we did:
-We prepared the project for submission by improving the README, adding screenshots, and recording our demo.
+Completed full CRUD operations for all resources, added validation and error handling, and prepared sample seed data.
 
-Outputs:
+Deliverables:
+- Fully implemented backend API
+- Validation and consistent error responses
+- Seed data for demo purposes
+  
+Checklist:
+-  ✔️ All CRUD endpoints completed
+-  ✔️ Validation and error handling added
+-  ✔️ Seed data prepared
+-  ✔️ OpenAPI spec validated
 
-Final documentation
-Demo video
-Updated README
+---
+
+🛠️ Milestone 4 (Nov Week 4): Frontend Integration
+What we did:
+Developed a simple frontend interface and connected it to the TaraCDO API to demonstrate core features.
+
+Deliverables:
+- Frontend UI displaying places and categories
+- Create and list data via API
+- Error and loading state handling
 
 Checklist:
+-  ✔️ Frontend lists data from API
+-  ✔️ Frontend creates new data
+-  ✔️ Error and loading states handled
+-  ✔️ Run instructions documented in README
 
--  User guide added
--  Demo video recorded
--  Final commits
--  Submitted repo
+---
+
+Milestone 5 (Dec Week 1): Documentation, Demo & Submission
+
+What we did:
+Prepared final documentation, demo materials, and ensured the repository was ready for presentation and submission.
+
+Deliverables:
+- Final README and documentation
+- Demo video or live demo script
+- Complete GitHub repository link
+
+Checklist:
+✔️ Documentation finalized
+- ✔️ Demo materials prepared
+- ✔️ Final commits pushed
+- ✔️ Project submitted
 
 ---
 
 🧭 Project Overview
 
 Problem:
-Tourists often struggle to find updated and offline-ready information about places in Cagayan de Oro.
+Tourists often struggle to find accurate and offline-accessible information about destinations in Cagayan de Oro City.
 
 Solution:
-TaraCDO provides listings of establishments, categories, ratings, and nearby spots that users can view without relying on Google Maps.
+TaraCDO provides organized listings of establishments, categories, ratings, and nearby locations that users can access even with limited connectivity.
 
 Tech Stack:
-
 - Frontend: HTML, CSS, JavaScript
 - Backend: Flask (Python) / Node.js
-- Database: MySQL or SQLite
-
-
-
-Database: MySQL / SQLite
-Deployment: GitHub repository for API and web interface
+- Database: MySQL / SQLite
+- Deployment: GitHub repository (API & Web Interface)
