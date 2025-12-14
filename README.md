@@ -1,7 +1,9 @@
 # -itcc14-api-project-TaraCDO-
+---
 
 TaraCDO — Explore. Discover. Experience.
 
+---
 Course: ITCC 14A – API Development
 Project Type: Tourist Resource Locator App
 Developed for: Tourists visiting Cagayan de Oro City
@@ -23,6 +25,8 @@ Project Milestones
 
 Milestone 1 (Nov Week 1): Project Proposal & API Design
 
+---
+
 What we did:
 Finalized the TaraCDO project topic, defined the core problem, and outlined the initial data models and API endpoints.
 
@@ -41,6 +45,8 @@ Checklist:
 ---
 
 Milestone 2 (Nov Week 2): Half Backend API + Documentation + GitHub
+
+---
 
 What we did:
 Initialized the repository, set up the development environment, and implemented basic create/list endpoints. OpenAPI documentation was updated with schemas and examples.
@@ -62,6 +68,8 @@ Checklist:
 
 Milestone 3 (Nov Week 3): Full Backend API
 
+---
+
 What we did:
 Completed full CRUD operations for all resources, added validation and error handling, and prepared sample seed data.
 
@@ -79,6 +87,9 @@ Checklist:
 ---
 
 Milestone 4 (Nov Week 4): Frontend Integration
+
+---
+
 What we did:
 Developed a simple frontend interface and connected it to the TaraCDO API to demonstrate core features.
 
@@ -97,6 +108,8 @@ Checklist:
 
 Milestone 5 (Dec Week 1): Documentation, Demo & Submission
 
+---
+
 What we did:
 Prepared final documentation, demo materials, and ensured the repository was ready for presentation and submission.
 
@@ -114,6 +127,8 @@ Checklist:
 ---
 
 Project Overview
+
+--- 
 
 Problem:
 Tourists often struggle to find accurate and offline-accessible information about destinations in Cagayan de Oro City.
