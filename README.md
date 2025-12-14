@@ -78,7 +78,7 @@ Checklist:
 
 ---
 
-🛠️ Milestone 4 (Nov Week 4): Frontend Integration
+Milestone 4 (Nov Week 4): Frontend Integration
 What we did:
 Developed a simple frontend interface and connected it to the TaraCDO API to demonstrate core features.
 
@@ -113,7 +113,7 @@ Checklist:
 
 ---
 
-🧭 Project Overview
+Project Overview
 
 Problem:
 Tourists often struggle to find accurate and offline-accessible information about destinations in Cagayan de Oro City.
