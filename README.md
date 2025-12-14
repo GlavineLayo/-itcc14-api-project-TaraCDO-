@@ -119,7 +119,7 @@ Deliverables:
 - Complete GitHub repository link
 
 Checklist:
-✔️ Documentation finalized
+- ✔️ Documentation finalized
 - ✔️ Demo materials prepared
 - ✔️ Final commits pushed
 - ✔️ Project submitted
