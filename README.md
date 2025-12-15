@@ -7,7 +7,7 @@ TaraCDO — Explore. Discover. Experience.
 Course: ITCC 14A – API Development
 Project Type: Tourist Resource Locator App
 Developed for: Tourists visiting Cagayan de Oro City
-Goal: Help users explore local destinations, restaurants, hotels, and landmarks without relying on Google Maps or an internet connection.
+Goal: Help users explore local destinations, restaurants, hotels, and landmarks without relying on Google Maps.
 
 ---
 
